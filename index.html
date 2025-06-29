@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Юнный техник</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <header>Юнный техник</header>
+      <ul>
+        <li>Товары</li>
+        <li>Отзывы</li>
+        <li>Помощь</li>
+        <li>Контакты</li>
+      </ul>
+      <button class="more">Посмотреть предложения</button>
+    </nav>
+
+    <main>
+      <img class="cover" alt="смартфоны, планшеты, техника" src="img/cover.png">
+
+      <h2>Лучшие товары от Юного Техника</h2>
+      <h3>Широкий выбор современной техники</h3>
+      <div class="example_product">
+        <div>
+          <img class="product" alt="Смартфон XY-300" src="img/phone.png" />
+          <h4>Смартфон XY-300</h4>
+          <p>Безграничные возможности в ваших руках</p>
+        </div>
+        <div>
+          <img class="product" alt="Планшет Atra Pro" src="img/pad.png" />
+          <h4>Планшет Atra Pro</h4>
+          <p>Настоящее мощное устройство для работы и развлечений</p>
+        </div>
+        <div>
+          <img class="product" alt="Идеальный ноутбук" src="img/laptop.png" />
+          <h4>Идеальный ноутбук</h4>
+          <p>Мощность и стиль в каждой детали</p>
+        </div>
+      </div>
+      <h2>Отзывы покупателей</h2>
+      <div>
+        <img class="avatar" alt="Александра Лаптева" src="img/human_1.png" />
+        <p>Александра Лаптева</p>
+        <p>Секретарь</p>
+        <p>
+          “Я просто в восторге от своего нового телефона XY-300! Этот аппарат
+          сочетает в себе стиль, функциональность и высокотехнологичные
+          возможности, что делает его идеальным спутником. Дизайн телефона
+          просто завораживает: тонкий и легкий корпус, изогнутый экран и
+          стильная цветовая гамма – все это создает великолепный внешний вид.
+          Аккумулятор держит заряд на протяжении всего дня, что особенно важно
+          для активной девушки, всегда в движении.”
+        </p>
+      </div>
+      <h2>Осатлись вопросы?</h2>
+      <h3>Мы готовы вам помочь</h3>
+      <form class="help_form">
+        <input type="text" id="name" name="name" placeholder="Ваше имя" />
+
+        <input type="email" id="email" name="email" placeholder="Ваш e-mail" required />
+
+        <textarea rows="1"  id="message" name="message" rows="4" required placeholder="Напишите, какие сложности возникли"></textarea>
+
+        <button class="submit" type="submit">Отправить</button>
+      </form>
+
+      <h2>Контакты</h2>
+      <h3>Мы рады видеть Вас в своем магазине</h3>
+      <div
+        style="
+          position: relative;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          box-sizing: border-box;
+        "
+      >
+        <a
+          href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps"
+          style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+          >Яндекс Карты</a
+        >
+        <a
+          href="https://yandex.by/maps/geo/2216914451/?ll=28.091017%2C43.347907&mode=search&sctx=ZAAAAAgAEAAaKAoSCbvUCP1MUTdAEb6kMVpHRUVAEhIJj4zV5v%2BV%2Fj8RWhDK%2Bzga6z8iBgABAgMEBSgKOABAc0gBagJ1YZ0BzczMPaABAKgBAL0BYfxDEcIBAQCCAg7QmtGA0LDQvdC10LLQvooCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=28.056061%2C43.341016&source=serp_navig&sspn=0.035032%2C0.015319&text=%D0%9A%D1%80%D0%B0%D0%BD%D0%B5%D0%B2%D0%BE&utm_medium=mapframe&utm_source=maps&z=11.67"
+          style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+          >Поселок Кранево — Яндекс Карты</a
+        >
+        <iframe
+          src="https://yandex.by/map-widget/v1/?ll=28.091017%2C43.347907&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjE2OTE0NDUxEknQkdGK0LvQs9Cw0YDQuNGPLCDQvtCx0LvQsNGB0YIg0JTQvtCx0YDQuNGHLCDQkdCw0LvRh9C40LosINCa0YDQsNC90LXQstC-IgoNGHTgQRUzXS1C&sctx=ZAAAAAgAEAAaKAoSCbvUCP1MUTdAEb6kMVpHRUVAEhIJj4zV5v%2BV%2Fj8RWhDK%2Bzga6z8iBgABAgMEBSgKOABAc0gBagJ1YZ0BzczMPaABAKgBAL0BYfxDEcIBAQCCAg7QmtGA0LDQvdC10LLQvooCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=28.056061%2C43.341016&source=serp_navig&sspn=0.035032%2C0.015319&text=%D0%9A%D1%80%D0%B0%D0%BD%D0%B5%D0%B2%D0%BE&z=11.67"
+          width="100%"
+          height="400"
+          frameborder="0"
+          allowfullscreen="true"
+          style="position: relative"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <header>Юнный техник</header>
+      <ul>
+        <li>О компании</li>
+        <li>Новости</li>
+        <li>Помощь</li>
+        <li>Контакты</li>
+      </ul>
+      <div>
+        <a href="tel:+78805555555">+7 (880) 555-55-55</a>
+        <a href="mailto:youngtechnic@yt.ru">youngtechnic@yt.ru</a>
+      </div>
+      <div>
+        <a href=""><img alt="Telegram" src="img/logo_telegram.png" /></a>
+        <a href=""><img alt="E-Mail" src="img/logo_email.png" /></a>
+      </div>
+    </footer>
+  </body>
+</html>
