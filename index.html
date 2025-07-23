@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <title>Юнный техник</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Юнный техник</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <header>Юнный техник</header>
-      <ul>
-        <li>Товары</li>
-        <li>Отзывы</li>
-        <li>Помощь</li>
-        <li>Контакты</li>
-      </ul>
-      <button class="more">Посмотреть предложения</button>
-    </nav>
+    <header>
+      <h1>Юнный техник</h1>
+      <nav>
+        <ul>
+          <li>Товары</li>
+          <li>Отзывы</li>
+          <li>Помощь</li>
+          <li>Контакты</li>
+        </ul>
+      </nav>
+      <button class="big_button">Посмотреть предложения</button>
+    </header>
 
     <main>
+      <section>
       <img class="cover" alt="смартфоны, планшеты, техника" src="img/cover.png">
-
       <h2>Лучшие товары от Юного Техника</h2>
       <h3>Широкий выбор современной техники</h3>
-      <div class="example_product">
-        <div>
-          <img class="product" alt="Смартфон XY-300" src="img/phone.png" />
+      <div class="products">
+        <div class="product_item">
+          <img class="product_image" alt="Смартфон XY-300" src="img/phone.png" />
           <h4>Смартфон XY-300</h4>
           <p>Безграничные возможности в ваших руках</p>
+          <button class="small_button">Купить</button>
         </div>
-        <div>
-          <img class="product" alt="Планшет Atra Pro" src="img/pad.png" />
+        <div class="product_item">
+          <img class="product_image" alt="Планшет Atra Pro" src="img/pad.png" />
           <h4>Планшет Atra Pro</h4>
           <p>Настоящее мощное устройство для работы и развлечений</p>
+          <button class="small_button">Купить</button>
         </div>
-        <div>
-          <img class="product" alt="Идеальный ноутбук" src="img/laptop.png" />
+        <div class="product_item">
+          <img class="product_image" alt="Идеальный ноутбук" src="img/laptop.png" />
           <h4>Идеальный ноутбук</h4>
           <p>Мощность и стиль в каждой детали</p>
+          <button class="small_button">Купить</button>
         </div>
       </div>
+      </section>
+
+      <section class="reviews">
       <h2>Отзывы покупателей</h2>
-      <div>
+      <div class="review">
         <img class="avatar" alt="Александра Лаптева" src="img/human_1.png" />
-        <p>Александра Лаптева</p>
-        <p>Секретарь</p>
+        <h3>Александра Лаптева</h3>
+        <h4>Секретарь</h4>
         <p>
           “Я просто в восторге от своего нового телефона XY-300! Этот аппарат
           сочетает в себе стиль, функциональность и высокотехнологичные
@@ -61,18 +66,23 @@
           для активной девушки, всегда в движении.”
         </p>
       </div>
+      </section>
+
+      <section>
       <h2>Осатлись вопросы?</h2>
       <h3>Мы готовы вам помочь</h3>
-      <form class="help_form">
+      <form>
         <input type="text" id="name" name="name" placeholder="Ваше имя" />
 
         <input type="email" id="email" name="email" placeholder="Ваш e-mail" required />
 
         <textarea rows="1"  id="message" name="message" rows="4" required placeholder="Напишите, какие сложности возникли"></textarea>
 
-        <button class="submit" type="submit">Отправить</button>
+        <button class="small_button" type="submit">Отправить</button>
       </form>
+      </section>
 
+      <section class="contacts">
       <h2>Контакты</h2>
       <h3>Мы рады видеть Вас в своем магазине</h3>
       <div
@@ -81,7 +91,6 @@
           overflow: hidden;
           margin: 0;
           padding: 0;
-          width: 100%;
           box-sizing: border-box;
         "
       >
@@ -104,23 +113,29 @@
           style="position: relative"
         ></iframe>
       </div>
+      </section>
     </main>
 
     <footer>
-      <header>Юнный техник</header>
-      <ul>
-        <li>О компании</li>
-        <li>Новости</li>
-        <li>Помощь</li>
-        <li>Контакты</li>
-      </ul>
-      <div>
+      <div class="footer_block">
+        <h2>Юнный техник</h2>
+      </div>
+      <div class="footer_block">
+        <ul>
+          <li>О компании</li>
+          <li>Новости</li>
+          <li>Помощь</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+      <div class="footer_block">
         <a href="tel:+78805555555">+7 (880) 555-55-55</a>
+        <br>
         <a href="mailto:youngtechnic@yt.ru">youngtechnic@yt.ru</a>
       </div>
-      <div>
-        <a href=""><img alt="Telegram" src="img/logo_telegram.png" /></a>
-        <a href=""><img alt="E-Mail" src="img/logo_email.png" /></a>
+      <div class="footer_block">
+        <a href="https://t.me/goshha625"><img alt="Telegram" src="img/logo_telegram.png"></a>
+        <a href="mailto:goshha625@gmail.com"><img alt="E-Mail" src="img/logo_email.png"></a>
       </div>
     </footer>
   </body>

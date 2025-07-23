@@ -1,84 +1,135 @@
-body {
+html {
+  text-align: center;
   font-family: "Jost";
-  font-size: 28px;
+  font-size: clamp(10px, 62.5%, 32px);
 }
 
-h1,
-h2,
-header {
-  font-size: 35px;
+h1, h2 {
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 300;
 }
 
-main {
-  text-align: center;
+h4 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+img {
+  object-fit: cover;
+}
+
+.reviews h3 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.reviews h4 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.reviews p {
+  font-size: 2.4rem;
+  font-weight: 300;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 1rem;
 }
 
 ul {
   list-style: none;
+  font-weight: 300;
+  font-size: 2.5rem;
 }
 
-nav > ul {
+header {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1vh 2vw;
+}
+
+header > * {
+  margin: auto;
+  padding: 3vw;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-li {
-  padding: 0% 7.5%;
-  display: flex;
-  justify-content: center;
-}
-
-nav {
-  display: flex;
-}
-
-nav > * {
-  margin: 2% 4% 5%;
-  width: 33%;
+header li {
+  padding: 0 1.5vw;
 }
 
 img.cover {
-  width: 71.6%;
-  border-radius: 50px;
+  width: 70vw;
+  height: 55vh;
+  border-radius: clamp(1rem, 3.5vw, 5rem);
 }
 
-img.product {
-  width: 20%;
-  border-radius: 20px;
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product_item {
+  width: min-content;
+  border: #76767680 1px solid;
+  border-radius: clamp(2rem, 3.5vw, 5rem);
+  padding: 2vw;
+  margin: 2vw;
+}
+
+img.product_image {
+  width: 25rem;
+  border-radius: clamp(2rem, 1.5vw, 5rem);
 }
 
 img.avatar {
-  width: 5.55%;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
 }
 
 button {
   background-color: #8c9fe3;
   color: white;
-  padding: 8px 16px;
+  padding: clamp(5px, 0.55vw, 10px) clamp(5px, 1.1vw, 20px);
   border: none;
-  border-radius: 10px;
+  border-radius: clamp(8px, 0.7vw, 12px);
   font-weight: 400;
   font-family: "Jost";
 }
 
-button.more {
-  width: 25%;
-  font-size: 23px;
+button.big_button {
+  font-size: 2.3rem;
 }
 
-button.submit {
-  font-size: 21px;
+button.small_button {
+  font-size: 2.1rem;
 }
 
 form {
-  width: 48.6%;
+  width: clamp(256px, 50vw, 1024px);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -96,13 +147,28 @@ input {
   border-radius: 30px;
   border: 1px solid #c2c2c2;
   font-family: "Jost";
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 300;
 }
 
-textarea {
-  min-height: min-content;
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.example_product {
+footer > * {
+  margin: auto;
+}
+
+footer ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer li {
+  padding: 1vw 0;
 }
